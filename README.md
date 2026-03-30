@@ -2,7 +2,8 @@
 
 > **End-to-End Data Pipeline** built on Azure's **Medallion Architecture** — from raw data ingestion to business-ready analytics using Azure Data Factory, Databricks AutoLoader, PySpark, Delta Live Tables, and Unity Catalog.
 
-![Architecture Overview](images/Workflow.png)
+<img width="2730" height="1536" alt="Workflow" src="https://github.com/user-attachments/assets/c4d7e45a-f995-4749-ae1a-2fb7aee2c787" />
+
 
 ---
 
