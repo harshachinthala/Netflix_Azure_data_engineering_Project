@@ -362,13 +362,13 @@ graph LR
 ```
 Netflix-Azure-Data-Engineering-Project/
 │
-├── 📓 1_AutoLoader.ipynb          # AutoLoader - Incremental bronze layer ingestion
-├── 📓 2_silver.ipynb               # Silver lookup table transformations (parameterized)
-├── 📓 3_lookupNotebook.ipynb       # Array parameter for ForEach iteration
-├── 📓 4_silver.ipynb               # Main silver transformation (netflix_titles)
-├── 📓 5_lookupNotebook.ipynb       # Weekday parameter for conditional execution
-├── 📓 6_falsenotebook.ipynb        # Fallback notebook for non-weekday runs
-├── 📓 7_DLT_Notebook.ipynb         # Delta Live Tables gold layer pipeline
+├── 1_AutoLoader.ipynb          # AutoLoader - Incremental bronze layer ingestion
+├── 2_silver.ipynb               # Silver lookup table transformations (parameterized)
+├── 3_lookupNotebook.ipynb       # Array parameter for ForEach iteration
+├── 4_silver.ipynb               # Main silver transformation (netflix_titles)
+├── 5_lookupNotebook.ipynb       # Weekday parameter for conditional execution
+├── 6_falsenotebook.ipynb        # Fallback notebook for non-weekday runs
+├── 7_DLT_Notebook.ipynb         # Delta Live Tables gold layer pipeline
 │
 ├── databricks-cluster.pbids     # Power BI connection file for Databricks SQL
 │
@@ -378,7 +378,7 @@ Netflix-Azure-Data-Engineering-Project/
 │   ├── DLT_Pipeline_1.png         # DLT graph - cast, category, countries
 │   └── DLT_Pipeline_2.png         # DLT graph - directors, titles pipeline
 │
-└── 📄 README.md
+└── README.md
 ```
 
 ---
@@ -501,7 +501,7 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Netflix Movies and TV Shows Dataset**
 
@@ -531,12 +531,12 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational purposes. The Netflix dataset is sourced from Kaggle under their terms of use.
 
 ---
 
 <p align="center">
-  <b>Built with ❤️ using Azure · Databricks · Delta Live Tables · PySpark</b>
+  <b>Built using Azure · Databricks · Delta Live Tables · PySpark</b>
 </p>
