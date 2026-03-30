@@ -457,11 +457,11 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 | Gold Table | Records | Quality Rules | Source |
 |---|---|---|---|
-| `gold_netflixcast` | ~44,000 | `show_id IS NOT NULL` | silver/netflix_cast |
-| `gold_netflixcategory` | ~14,000 | `show_id IS NOT NULL` | silver/netflix_category |
-| `gold_netflixcountries` | ~7,200 | `show_id IS NOT NULL` | silver/netflix_countries |
-| `gold_netflixdirectors` | ~4,900 | `show_id IS NOT NULL` | silver/netflix_directors |
-| `gold_netflixtitles` | ~6,200 | `newflag IS NOT NULL`, `show_id IS NOT NULL` | silver/netflix_titles (via staging + view) |
+| `gold_netflixcast` | 44,000 | `show_id IS NOT NULL` | silver/netflix_cast |
+| `gold_netflixcategory` | 14,000 | `show_id IS NOT NULL` | silver/netflix_category |
+| `gold_netflixcountries` | 7,200 | `show_id IS NOT NULL` | silver/netflix_countries |
+| `gold_netflixdirectors` | 4,900 | `show_id IS NOT NULL` | silver/netflix_directors |
+| `gold_netflixtitles` | 6,200 | `newflag IS NOT NULL`, `show_id IS NOT NULL` | silver/netflix_titles (via staging + view) |
 
 ---
 
