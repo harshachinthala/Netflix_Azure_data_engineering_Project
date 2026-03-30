@@ -116,7 +116,8 @@ This project demonstrates a **production-grade data engineering pipeline** using
 
 ### Step 2: Data Ingestion with Azure Data Factory
 
-![Azure Data Factory Workflow](images/Azure_Data_Factory_Workflow.png)
+<img width="1086" height="321" alt="Azure Data Factory Work flow to acess Data " src="https://github.com/user-attachments/assets/c8117fc0-bda5-493c-a06b-16d08ec99ede" />
+
 
 Built a **dynamic, parameterized pipeline** in Azure Data Factory that:
 
@@ -439,10 +440,12 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ### Pipeline Run — Streaming Tables
 
-![DLT Pipeline - Cast, Category, Countries](images/DLT_Pipeline_1.png)
+<img width="776" height="609" alt="Details of Records image in Final pipeline" src="https://github.com/user-attachments/assets/05b7a3d2-7296-4f86-8153-28b67f9b0ea2" />
+
 *Streaming tables: gold_netflixcast (44K records), gold_netflixcategory (14K), gold_netflixcountries (7.2K)*
 
-![DLT Pipeline - Directors, Titles](images/DLT_Pipeline_2.png)
+<img width="915" height="341" alt="Screenshot 2026-03-30 at 2 52 13 PM" src="https://github.com/user-attachments/assets/ab828099-857b-46c7-bd0a-1c6fd15d9993" />
+
 *Directors (4.9K), staging → transform view → gold_netflixtitles (6.2K records)*
 
 ### Gold Layer Tables Summary
