@@ -1,13 +1,18 @@
-# 🎬 Netflix Azure Data Engineering Project
+# Netflix Azure Data Engineering Project
+
+
+![Azure](https://img.shields.io/badge/Cloud_Platform-Azure-0089D6?style=flat&logo=microsoft-azure&logoColor=white) ![Data Factory](https://img.shields.io/badge/Data_Integration-Azure_Data_Factory-0089D6?style=flat&logo=microsoft-azure&logoColor=white) ![Databricks](https://img.shields.io/badge/Compute_&_Transformation-Azure_Databricks-FF3621?style=flat&logo=databricks&logoColor=white) ![PySpark](https://img.shields.io/badge/Data_Processing-PySpark-E25A1C?style=flat&logo=apache-spark&logoColor=white) 
+![Delta Lake](https://img.shields.io/badge/Data_Format-Delta_Lake-00A4E4?style=flat) ![Storage](https://img.shields.io/badge/Storage-ADLS_Gen2-0089D6?style=flat&logo=microsoft-azure&logoColor=white) ![Python](https://img.shields.io/badge/Programming-Python_3.8+-3776AB?style=flat&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/Query_Language-SQL-4479A1?style=flat&logo=postgresql&logoColor=white) ![GitHub](https://img.shields.io/badge/Source_Control-GitHub-181717?style=flat&logo=github&logoColor=white)
 
 > **End-to-End Data Pipeline** built on Azure's **Medallion Architecture** — from raw data ingestion to business-ready analytics using Azure Data Factory, Databricks AutoLoader, PySpark, Delta Live Tables, and Unity Catalog.
 
 <img width="2730" height="1536" alt="Workflow" src="https://github.com/user-attachments/assets/c4d7e45a-f995-4749-ae1a-2fb7aee2c787" />
 
 
+
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Architecture](#-architecture)
@@ -30,7 +35,7 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project demonstrates a **production-grade data engineering pipeline** using Netflix movies & TV shows data. The pipeline follows the **Medallion Architecture** (Bronze → Silver → Gold) and incorporates:
 
@@ -43,7 +48,7 @@ This project demonstrates a **production-grade data engineering pipeline** using
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌─────────────┐     ┌──────────────────────┐     ┌──────────────────┐
@@ -81,7 +86,7 @@ This project demonstrates a **production-grade data engineering pipeline** using
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -98,7 +103,7 @@ This project demonstrates a **production-grade data engineering pipeline** using
 
 ---
 
-## 🔄 End-to-End Workflow
+## End-to-End Workflow
 
 ### Step 1: Azure Environment Setup
 
@@ -249,7 +254,7 @@ def gold_netflixtitles():
 
 ---
 
-## 📊 Pipeline Flow Diagram
+## Pipeline Flow Diagram
 
 ```mermaid
 graph LR
@@ -352,7 +357,7 @@ graph LR
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Netflix-Azure-Data-Engineering-Project/
@@ -365,9 +370,9 @@ Netflix-Azure-Data-Engineering-Project/
 ├── 📓 6_falsenotebook.ipynb        # Fallback notebook for non-weekday runs
 ├── 📓 7_DLT_Notebook.ipynb         # Delta Live Tables gold layer pipeline
 │
-├── 📄 databricks-cluster.pbids     # Power BI connection file for Databricks SQL
+├── databricks-cluster.pbids     # Power BI connection file for Databricks SQL
 │
-├── 🖼️ images/
+├── images/
 │   ├── Workflow.png                # End-to-end architecture diagram
 │   ├── Azure_Data_Factory_Workflow.png  # ADF pipeline screenshot
 │   ├── DLT_Pipeline_1.png         # DLT graph - cast, category, countries
@@ -378,7 +383,7 @@ Netflix-Azure-Data-Engineering-Project/
 
 ---
 
-## 📓 Notebook Details
+## Notebook Details
 
 ### `1_AutoLoader.ipynb` — Bronze Layer Ingestion
 - Creates the Unity Catalog schema (`netflix_catalog.net_schema`)
@@ -436,7 +441,7 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## 📈 Delta Live Tables Pipeline
+## Delta Live Tables Pipeline
 
 ### Pipeline Run — Streaming Tables
 
@@ -460,7 +465,7 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## 💡 Key Learnings & Challenges
+## Key Learnings & Challenges
 
 ### What I Learned
 
@@ -484,7 +489,7 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - **Azure Account** — Free tier with $200 credit ([Create here](https://azure.microsoft.com/en-us/free/))
 - **Azure Subscription** — Comes with the free account
@@ -512,7 +517,7 @@ dbutils.jobs.taskValues.set(key="my_arr", value=files)
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Set up Azure environment** — Create resource group, storage account (Data Lake Gen2), and Databricks workspace
 2. **Configure Unity Catalog** — Create metastore, access connector, and external locations
